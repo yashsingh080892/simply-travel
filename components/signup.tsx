@@ -261,7 +261,8 @@ const Signup = (props:any) => {
                     <WrapperRadioGroup options={[{name:"Air Asia", id:"AIR_ASIA"},
                         {name:"Lufthansa", id:"LUFTHANSA"},
                         {name:"Emirates", id:"EMIRATES"},
-                        {name:"Indigo", id:"INDIGO"}
+                        {name:"Indigo", id:"INDIGO"},
+                        {name:"Air India", id:"AIR_INDIA"},
                     ]} value={preferredAirline} onValueChange={setPreferredAirline}/>
                 </div>
             </div>
