@@ -260,7 +260,8 @@ const Signup = (props:any) => {
                     <FieldName label="Preferred Airlines"/>
                     <WrapperRadioGroup options={[{name:"Air Asia", id:"AIR_ASIA"},
                         {name:"Lufthansa", id:"LUFTHANSA"},
-                        {name:"Emirates", id:"EMIRATES"}
+                        {name:"Emirates", id:"EMIRATES"},
+                        {name:"Indigo", id:"INDIGO"}
                     ]} value={preferredAirline} onValueChange={setPreferredAirline}/>
                 </div>
             </div>
