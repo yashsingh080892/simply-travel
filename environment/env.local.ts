@@ -1,0 +1,11 @@
+export const city="/cities";
+export const addons="/addons";
+export const booking="/bookings"
+export const discount ="/discounts"
+export const flight_details="/flight-details"
+export const seat ="/seat-details"
+export const user="/users/login"
+export const signUp="/users/register"
+export const payments="/payments"
+export const apikey="/keys"
+export const passengers="/passengers"

@@ -1,0 +1,76 @@
+.ts-t-search-tabs, .ts-t-search-tabs-2 {
+	@apply -mt-4;
+	padding: 32px 18px;
+	border-radius: 0px 10px 10px 10px;
+}
+.ts-t-search-tabs-2 {
+	padding: 26px 24px;
+	border-radius: 10px 10px 10px 10px;
+}
+.ts-t-flight-radio-group-container {
+	padding:14px 25px;
+	border-radius: 10px 10px 0px 0px;
+}
+.ts-t-bottom-half-extension{
+	position: absolute;
+}
+.ts-t-filter-box{
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	> div:not(:last-child):not(.border-0){
+		border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+	}
+	.border-0{
+		padding: 0px;
+	}
+	.ts-toggle-button{
+		margin-left: -20px;
+		bottom: 52px;
+	}
+	.ts-toggle-button-2{
+		margin-left: -20px;
+		top: 133px;
+	}
+	.ap-name, .ct_name{
+		color: rgba(31, 31, 31, 0.8);
+	}
+}
+.ts-t-filter-box {
+	> div {
+		padding: 18px;
+	}
+}
+
+.ts-t-search-tabs, .ts-t-search-tabs-2{
+	> div {
+		> div:not(:last-child) {
+			padding-left: 18px;
+		}
+	}
+}
+.ts-toggle-button, .ts-toggle-button-2{
+	border-radius: 38px;
+	width: 38px;
+	height: 38px;
+	padding: 13px !important;
+	background: #F8F8F8;
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	content: url("../public/toggle.svg");
+}
+
+.ts-flight-list{
+	.list-card{
+		border: 0.5px solid rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+	}
+}
+button.Mui-selected{
+	@apply bg-primary #{!important};
+}
+.ts-t-search-tabs-2{
+	.ts-t-filter-box{
+		> div{
+			padding-left: 0px;
+		}
+	}
+}

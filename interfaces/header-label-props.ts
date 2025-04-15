@@ -1,0 +1,1 @@
+export interface HeaderLabelProps {content:string,type?: number | undefined, className?:string}

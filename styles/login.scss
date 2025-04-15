@@ -1,0 +1,124 @@
+.ts-t-radio-group {
+  text-align: left;
+  label {
+    padding-right: 12px;
+  }
+  .active {
+    color: #6648d8;
+  }
+  color: rgba(31, 31, 31, 0.8);
+  input {
+    @apply w-4 h-4;
+  }
+  input[type='radio'] {
+    display: none;
+  }
+  input[type='radio'] + label span {
+    @apply w-4 h-4;
+    display: inline-block;
+    background: transparent;
+    vertical-align: middle;
+    border: 1px solid rgba(31, 31, 31, 0.8);
+    border-radius: 50%;
+    padding: 3px;
+  }
+  input[type='radio']:checked + label span {
+    @apply w-4 h-4;
+    background: #6648d8;
+    border: 1px solid #6648d8;
+    background-clip: content-box;
+  }
+}
+.otp-inputs {
+  input:not(:last-child) {
+    margin-right: 20px;
+  }
+  input {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 24px;
+    height: 31px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+.ts-t-input {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: 31px;
+  outline: none;
+}
+.ts-t-label {
+  font-size: 13px;
+  color: #4c4c4c;
+  text-align: left;
+  height: 31px;
+}
+.login-form {
+  padding: 35px 50px;
+  width: 363px;
+  height: 336px;
+  text-align: center;
+  background: white;
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='password'] {
+    @extend .ts-t-input;
+  }
+}
+.warning-border {
+  border-color: #e96958 !important;
+}
+.intl-tel-input {
+  height: 13px;
+  margin-top: 17px;
+  margin-bottom: 8px;
+  input {
+    display: none;
+  }
+  //top: -5px;
+  .flag-container {
+    position: relative !important;
+  }
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+  .arrow.down:after,
+  .arrow.up:after {
+    content: url('../public/down-arrow.svg') !important;
+  }
+}
+.flag-prefix {
+  position: absolute !important;
+}
+.signup-form {
+  height: 616px;
+  width: 1200px;
+  background: white;
+  padding: 35px 40px;
+  .MuiRadio-root {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .MuiTypography-root {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .Mui-checked {
+    .MuiSvgIcon-root,
+    + .MuiTypography-root {
+      color: #6648d8;
+    }
+  }
+  ::file-selector-button {
+    display: none;
+  }
+}
+
+.ts-t-v4-flight-search {
+  .active {
+    .ts-t-v4-flight-search-radio-label {
+      @apply border-[#076bf3] text-[#076bf3];
+    }
+  }
+}

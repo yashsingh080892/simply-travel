@@ -1,0 +1,39 @@
+.trigger{}
+
+.accordion_content{
+  overflow: hidden;
+}
+
+.accordion_content[data-state="open"] {
+  animation: openContent 400ms ease-out;
+  animation-fill-mode: forwards;
+}
+.trigger[data-state="open"]{
+  .drop_icon{
+    @apply rotate-180;
+  }
+}
+
+.accordion_content[data-state="closed"] {
+  animation: closedContent 400ms ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes openContent {
+  from {
+    height: 0
+  }
+
+  to {
+    height: var(--radix-accordion-content-height)
+  }
+}
+
+@keyframes closedContent {
+  from {
+    height: var(--radix-accordion-content-height)
+  }
+
+  to {
+    height: 0;
+  }
+}

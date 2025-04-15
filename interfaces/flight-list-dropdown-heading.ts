@@ -1,0 +1,1 @@
+export interface FlightListDropdownHeading {heading:string}
