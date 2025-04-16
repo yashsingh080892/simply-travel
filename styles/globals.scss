@@ -84,3 +84,20 @@ header {
 .iframe {
   width: 100%;
 }
+
+// User Type Selector styles
+.MuiRadio-root {
+    color: #6648d8 !important;
+    &.Mui-checked {
+        color: #6648d8 !important;
+    }
+}
+
+.MuiFormControlLabel-root {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    .MuiTypography-root {
+        color: #4c4c4c;
+        font-size: 14px;
+    }
+}
