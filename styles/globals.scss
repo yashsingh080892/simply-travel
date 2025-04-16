@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './flight-search.scss';
+@import './flight-filters.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: linear-gradient(
+    287.98deg,
+    rgba(0, 0, 0, 0.3) 47.07%,
+    rgba(0, 0, 0, 0) 84.32%
+  );
+  background-size: 100% 100%;
+  .logo {
+    content: url('../public/simply-travel.svg');
+    margin-bottom: 13px;
+    background: linear-gradient(
+      105.42deg,
+      rgba(255, 255, 255, 0.5) 5.54%,
+      rgba(255, 255, 255, 0.19) 97.36%
+    );
+  }
+  &.v1 {
+    background-image: url('../public/header-bg-v1.jpg');
+  }
+  &.v2 {
+    background-image: url('../public/header-bg.jpeg');
+  }
+  &.v {
+    background-image: url('../public/header-bg.jpg');
+  }
+}
+.login-btn {
+  background: linear-gradient(
+    105.42deg,
+    rgba(255, 255, 255, 0.5) 5.54%,
+    rgba(255, 255, 255, 0.19) 97.36%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(18px);
+  border-radius: 5px;
+  color: white;
+  padding: 0px 38px;
+  height: 33px;
+}
+.MuiTab-root.Mui-selected {
+  background: white !important;
+  color: #6648d8 !important;
+}
+.MuiBox-root {
+  padding: 0px;
+}
+.MuiTab-root {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Lato';
+}
+.Mui-disabled {
+  cursor: not-allowed !important;
+  pointer-events: all;
+}
+.MuiTypography-root {
+  font-family: 'Lato', sans-serif;
+}
+.iframe {
+  width: 100%;
+}

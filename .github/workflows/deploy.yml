@@ -1,0 +1,66 @@
+name: 'Deploy'
+on: 
+  push:
+    branches:
+      - 'main'
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node 12
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
+      - name: Install dependencies
+        run: |
+          npm ci --ignore-scripts
+      - name: Lint
+        run: |
+          npm run lint
+      - name: Replace Build credentials
+        run: |
+          sed -i "s/http:\/\/localhost:8003\//https:\/\/${{env.CLOUD_FRONT_URL}}\/nextjs\/${GITHUB_SHA::6}/g" next.config.js
+          sed -i "s/\"0.0.0\"/\"1.0.0-${GITHUB_SHA::6}\"/g" package.json
+          sed -i "s/http:\/\/dev-flash.testsigma.com/https:\/\/${{env.FLASH_URL}}/g" api/instance.ts
+          cat next.config.js
+        env:
+          CLOUD_FRONT_URL: ${{ secrets.CLOUD_FRONT_URL}}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME}}
+          CLOUD_FRONT_DISTRIBUTION_ID: ${{ secrets.CLOUD_FRONT_DISTRIBUTION_ID}}
+          FLASH_URL : "flash-staging.testsigma.com"
+      - name: Build
+        run: |
+          npm run build
+      - name: Upload
+        run: |
+          aws s3 cp out s3://${{env.BUCKET_NAME}}/travel/nextjs/${GITHUB_SHA::6}/ --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --cache-control max-age=315360000
+          aws s3 cp public s3://${{env.BUCKET_NAME}}/travel/nextjs/${GITHUB_SHA::6}/ --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --cache-control max-age=315360000
+          aws s3 cp s3://${{env.BUCKET_NAME}}/travel/nextjs/${GITHUB_SHA::6} s3://${{env.BUCKET_NAME}}/travel/nextjs/latest --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --cache-control max-age=315360000
+        env:
+          CLOUD_FRONT_URL: ${{ secrets.CLOUD_FRONT_URL}}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME}}
+          CLOUD_FRONT_DISTRIBUTION_ID: ${{ secrets.CLOUD_FRONT_DISTRIBUTION_ID}}
+          AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
+          AWS_DEFAULT_OUTPUT: json
+      - name: Deploy
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{env.CLOUD_FRONT_DISTRIBUTION_ID}} --paths '/*'
+        env:
+          CLOUD_FRONT_URL: ${{ secrets.CLOUD_FRONT_URL}}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME}}
+          CLOUD_FRONT_DISTRIBUTION_ID: ${{ secrets.CLOUD_FRONT_DISTRIBUTION_ID}}
+          AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
+          AWS_DEFAULT_OUTPUT: json
+      
+

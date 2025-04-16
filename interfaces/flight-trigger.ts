@@ -1,0 +1,1 @@
+export interface FlightTriggerProps {cityName:string,airportName:string}

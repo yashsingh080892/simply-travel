@@ -1,0 +1,1510 @@
+{
+  "stops": [
+    {
+    "name": "0 Stops",
+    "id": 0,
+    "ph_price": 100
+    },
+    {
+    "name": "1 Stop",
+    "id": 1,
+    "ph_price": 400
+  },{
+    "name": "2 Stops",
+    "id": 2,
+    "ph_price": 543
+  },{
+    "name": "3 Stops",
+    "id": 3,
+    "ph_price": 654
+  }],
+  "airlines":[
+    {
+      "name":"British Airways",
+      "id":"BA",
+      "price": 100,
+      "logo-url":"british-airways.png",
+      "flight_ids": ["BA 1549", "BA 1829", "BA 1563"]
+    },
+    {
+      "name":"Air France",
+      "id":"AF",
+      "price": 105,
+      "logo-url":"air-france.svg",
+      "flight_ids": ["AF 126", "AF 163"]
+    },
+    {
+      "name": "American Airlines",
+      "id": "AA",
+      "price": 100,
+      "logo-url": "american-airlines.png",
+      "flight_ids": ["AA 1549", "AA 1829", "AA 1563"]
+    },
+    {
+      "name":"Air India",
+      "id":"AI",
+      "price": 100,
+      "logo-url":"air-india.svg",
+      "flight_ids": ["AI 126", "AI 163"]
+    },
+    {
+      "name":"Emirates",
+      "id":"EM",
+      "price": 100,
+      "logo-url":"emirates.svg",
+      "flight_ids": ["EM 569", "EM 453", "EM 566"]
+    },
+    {
+      "name":"Lufthansa",
+      "id":"LA",
+      "price": 105,
+      "logo-url":"lufthansa.svg",
+      "flight_ids": ["LA 126", "LA 163"]
+    },
+    {
+      "name":"United Airlines",
+      "id":"UA",
+      "price": 105,
+      "logo-url":"united-airlines.svg",
+      "flight_ids":["UA 955", "UA 999", "UA MAX", "UA 1829"]
+    },
+    {
+      "name":"Turkish Airlines",
+      "id":"TA",
+      "price": 100,
+      "logo-url":"turkish-airlines.svg",
+      "flight_ids": ["TA 126", "TA 163"]
+    }
+  ],
+  "cities": [
+    {
+    "ct_id": "LA-US",
+    "ct_name": "Los Angeles",
+    "cn_name": "California(United States)",
+    "ap_name": "Los Angeles International Airport",
+    "offset_time": "00:00",
+    "host_airlines" : ["UA", "AA"]
+  },
+    {
+    "ct_id": "WDC-US",
+    "ct_name": "Washington, D.C.",
+    "cn_name": "Virginia(United States)",
+    "ap_name": "Washington Dulles International Airport",
+    "offset_time": "02:00",
+    "host_airlines" : ["UA", "AA"]
+  },
+    {
+    "ct_id": "NY-US",
+    "ct_name": "New York City",
+    "cn_name": "New York(United States)",
+    "ap_name": "John F. Kennedy International Airport",
+    "offset_time": "04:00",
+    "host_airlines" : ["UA", "AA"]
+  },
+    {
+    "ct_id": "LD-UK",
+    "ct_name": "London",
+    "cn_name": "England(United Kingdom)",
+    "ap_name": "London Heathrow International Airport",
+    "offset_time": "06:00",
+    "host_airlines" : ["BA", "TA"]
+  },
+    {
+      "ct_id": "MUM-IN",
+      "ct_name": "Mumbai",
+      "cn_name": "India",
+      "ap_name": "Chatrapathi Shivaji International Airport",
+      "offset_time": "08:00",
+      "host_airlines" : ["AI"]
+    },
+    {
+      "ct_id": "DEL-IN",
+      "ct_name": "Delhi",
+      "cn_name": "India",
+      "ap_name": "Delhi Airport",
+      "offset_time": "10:00",
+      "host_airlines" : ["AI"]
+    },
+    {
+      "ct_name": "Pune",
+      "cn_name": "India",
+      "ct_id": "PNQ",
+      "ap_name": "Pune Airport",
+      "offset_time": "10:30",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_name": "Kathmandu",
+      "cn_name": "Nepal",
+      "ct_id": "KTM",
+      "ap_name": "Tribhuvan International Airport",
+      "offset_time": "11:15",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_name": "Hyderabad",
+      "cn_name": "India",
+      "ct_id": "HYD",
+      "ap_name": "Rajiv Gandhi International Airport",
+      "offset_time": "11:30",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_name": "Kolkata",
+      "cn_name": "India",
+      "ct_id": "CCU",
+      "ap_name": "Netaji Subhash Chandra Bose International Airport",
+      "offset_time": "11:40",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_id": "BLR-IN",
+      "ct_name": "Bengaluru",
+      "cn_name": "India",
+      "ap_name": "Bengaluru International Airport",
+      "offset_time": "12:00",
+      "host_airlines" : ["AI"]
+    },
+    {
+      "ct_name": "Goa",
+      "cn_name": "India",
+      "ct_id": "GOI",
+      "ap_name": "Dabolim Goa International Airport",
+      "offset_time": "12:25",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_name": "Chennai",
+      "cn_name": "India",
+      "ct_id": "MAA",
+      "ap_name": "Madras,Chennai International Airport",
+      "offset_time": "12:30",
+      "host_airlines": ["AI"]
+    },
+    {
+      "ct_id": "SFO-US",
+      "ct_name": "San Francisco",
+      "cn_name": "California(United States)",
+      "ap_name": "San Francisco International Airport",
+      "offset_time": "14:00",
+      "host_airlines" : ["UA", "AA"]
+    },
+    {
+      "ct_id": "SIN-SIN",
+      "ct_name": "Singapore",
+      "cn_name": "Singapore",
+      "ap_name": "Changi Airport",
+      "offset_time": "16:00",
+      "host_airlines": ["LA"]
+    },
+    {
+      "ct_id": "CHI-US",
+      "ct_name": "Chicago",
+      "cn_name": "Chicago(United States)",
+      "ap_name": "Chicago Airport",
+      "offset_time": "18:00",
+      "host_airlines" : ["UA", "AA"]
+    },
+    {
+      "ct_name": "Bangkok",
+      "cn_name": "Thailand",
+      "ct_id": "BKK",
+      "ap_name": "Suvarnabhumi Airport",
+      "offset_time": "20:00",
+      "host_airlines": ["LA"]
+    },
+    {
+      "ct_name": "Dubai",
+      "cn_name": "United Arab Emirates",
+      "ct_id": "DXB",
+      "ap_name": "Dubai International Airport",
+      "offset_time": "22:00",
+      "host_airlines": ["EM"]
+    },
+    {
+      "ct_name": "Abu Dhabi",
+      "cn_name": "United Arab Emirates",
+      "ct_id": "AUH",
+      "ap_name": "Abu Dhabi International Airport",
+      "offset_time": "22:15",
+      "host_airlines": ["EM"]
+    },
+    {
+      "ct_name": "Sharjah",
+      "cn_name": "United Arab Emirates",
+      "ct_id": "SHJ",
+      "ap_name": "Sharjah International Airport",
+      "offset_time": "22:30",
+      "host_airlines": ["EM"]
+    },
+    {
+      "ct_name": "Hong Kong",
+      "cn_name": "Hong Kong",
+      "ct_id": "HKG",
+      "ap_name": "Hong Kong International Airport",
+      "offset_time": "23:00",
+      "host_airlines": ["TA", "LA"]
+    },
+    {
+      "ct_name": "Paris",
+      "cn_name": "France",
+      "ct_id": "CDG",
+      "ap_name": "Charles de Gaulle Airport",
+      "offset_time": "23:30",
+      "host_airlines": ["AF"]
+    }
+  ],
+  "flights": [
+    {
+    "multi-flight": [{
+      "f_id": "multi",
+      "tt": "40:46",
+      "ph_price": 400,
+      "trips": [],
+      "flights": [
+        {
+          "UA": [
+            {
+              "f_id": "UA 1829",
+              "trips": [
+                {
+              "tr_path": [
+                {
+                  "ct_id": "SFO-US",
+                  "classes": [
+                    "First-Class",
+                    "Business",
+                    "Premium-Economy",
+                    "Economy"
+                  ],
+                  "dt": "18:49",
+                  "at": "03:25"
+                },
+                {
+                  "ct_id": "CHI-US",
+                  "classes": [
+                    "First-Class",
+                    "Business",
+                    "Premium-Economy",
+                    "Economy"
+                  ],
+                  "lt": "06:20",
+                  "dt": "06:25",
+                  "at": "03:25"
+                }
+              ]
+              },
+                {
+                  "tr_path": [
+                    {
+                      "ct_id": "SFO-US",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "dt": "18:49",
+                      "at": "03:25"
+                    },
+                    {
+                      "ct_id": "CHI-US",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "lt": "06:20",
+                      "dt": "06:25",
+                      "at": "03:25"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "AI":[
+            {
+              "f_id": "AI 126",
+              "trips": [
+                {
+                  "tr_path": [
+                    {
+                      "ct_id": "DEL-IN",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "lt": "08:10",
+                      "dt": "18:49",
+                      "at": "03:25"
+                    },
+                    {
+                      "ct_id": "BLR-IN",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "dt": "00:05",
+                      "at": "00:05"
+                    }
+                  ]
+                },
+                {
+                  "tr_path": [
+                    {
+                      "ct_id": "SFO-US",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "dt": "18:49",
+                      "at": "03:25"
+                    },
+                    {
+                      "ct_id": "CHI-US",
+                      "classes": [
+                        "First-Class",
+                        "Business",
+                        "Premium-Economy",
+                        "Economy"
+                      ],
+                      "lt": "06:20",
+                      "dt": "06:25",
+                      "at": "03:25"
+                    }
+                  ]
+                }
+              ]
+            }]
+        }
+      ]
+    }],
+    "AA": [
+      {
+      "f_id": "AA 1549",
+      "tt": "19:30",
+      "ph_price": 500,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "19:35",
+              "at": "03:25"
+            },
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:30",
+              "at": "02:10",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "03:40",
+              "at": "03:25",
+              "lt": "08:10"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:45",
+              "at": "04:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "19:35",
+              "at": "03:25"
+            },
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:30",
+              "at": "02:10",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "03:40",
+              "at": "03:25",
+              "lt": "08:10"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:45",
+              "at": "04:25"
+            }
+          ]
+        }
+      ]
+    },
+      {
+      "f_id": "AA 1829",
+      "tt": "21:50",
+      "ph_price": 600,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "20:35",
+              "at": "06:25"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:45",
+              "at": "02:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "20:35",
+              "at": "06:25"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:45",
+              "at": "02:25"
+            }
+          ]
+        }]
+    },
+      {
+      "f_id": "AA 1563",
+      "tt": "40:46",
+      "ph_price": 550,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:30",
+              "at": "04:10"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "05:30",
+              "at": "05:15",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "06:45",
+              "at": "06:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:30",
+              "at": "04:10"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "05:30",
+              "at": "05:15",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "06:45",
+              "at": "06:25"
+            }
+          ]
+        }
+      ]
+    }],
+    "UA": [{
+      "f_id": "UA 955",
+      "tt": "23:05",
+      "ph_price": 600,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "19:35",
+              "at": "03:25"
+            },
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:30",
+              "at": "02:10",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "03:40",
+              "at": "03:25",
+              "lt": "08:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:45",
+              "at": "04:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "19:35",
+              "at": "03:25"
+            },
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:30",
+              "at": "02:10",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "03:40",
+              "at": "03:25",
+              "lt": "08:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:45",
+              "at": "04:25"
+            }
+          ]
+        }
+      ]
+    },
+      {
+      "f_id": "UA 999",
+      "tt": "22:25",
+      "ph_price": 650,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "20:35",
+              "at": "06:25"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:45",
+              "at": "02:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "LA-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "20:35",
+              "at": "06:25"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "02:45",
+              "at": "02:25"
+            }
+          ]
+        }
+      ]
+    },
+      {
+      "f_id": "UA MAX",
+      "tt": "41:15",
+      "ph_price": 700,
+      "trips": [
+        {
+          "tr_path": [
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:30",
+              "at": "04:10"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "05:30",
+              "at": "05:15",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "06:45",
+              "at": "06:25"
+            }
+          ]
+        },
+        {
+          "tr_path": [
+            {
+              "ct_id": "WDC-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "04:30",
+              "at": "04:10"
+            },
+            {
+              "ct_id": "NY-US",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "05:30",
+              "at": "05:15",
+              "lt": "06:20"
+            },
+            {
+              "ct_id": "LD-UK",
+              "classes": [
+                "First-Class",
+                "Business",
+                "Premium-Economy",
+                "Economy"
+              ],
+              "dt": "06:45",
+              "at": "06:25"
+            }
+          ]
+        }]
+    }]
+  }],
+  "multi-city-flights": [
+    {
+      "AI" : [{
+        "f_id": "AI 163",
+        "ph_price": 700,
+        "trips": [{
+          "a_id":"AI",
+          "f_id": "AI 163",
+          "tt": "22:25",
+          "tr_path": [
+            {
+              "ct_id": "SFO-US",
+              "dt": "22:00"
+            },
+            {
+              "ct_id": "DEL-IND",
+              "lt": "03:55",
+              "dt": "22:00"
+            },
+            {
+              "ct_id": "BLR-IND",
+              "at": "08:55"
+            }
+          ]
+        },
+        {
+          "a_id": "AI",
+          "f_id": "AI 163",
+          "tt": "02:20",
+          "tr_path": [
+            {
+              "ct_id": "BLR-IND",
+              "dt": "13:20"
+            },
+            {
+              "ct_id": "DEL-IND",
+              "at": "15:40"
+            }
+          ]
+        }
+        ]
+      }],
+      "EM,AI": [{
+        "trips": [{
+          "f_id": "EM 569",
+          "tt": "21:25",
+          "tr_path": [
+            {
+              "ct_id": "SFO-US",
+              "dt": "17:05"
+            },
+            {
+              "ct_id": "DXB",
+              "lt": "01:45",
+              "dt": "03:00"
+            },
+            {
+              "ct_id": "BLR-IND",
+              "at": "03:00"
+            }
+          ]
+        },
+          {
+            "f_id": "AI 163",
+            "tt": "02:20",
+            "tr_path": [
+              {
+                "ct_id": "BLR-IND",
+                "dt": "13:20"
+              },
+              {
+                "ct_id": "DEL-IND",
+                "at": "15:40"
+              }
+            ]
+          }
+        ]
+      }]
+    }],
+  "tripTypes": [
+    {
+      "name":"One Way Trip",
+      "id": 1
+    },
+    {
+      "name":"Round Trip",
+      "id": 2
+    },
+    {
+      "name":"Multi City",
+      "id": 3
+    }],
+  "classes":[
+    {
+      "name":"First-Class",
+      "id": 1
+    },
+    {
+      "name":"Business",
+      "id" : 2
+    },
+    {
+      "name":"Premium-Economy",
+      "id" : 3
+    },
+    {
+      "name":"Economy",
+      "id" : 4
+    }],
+  "popularFilters": [
+    {
+      "name" : "Refundable Fares",
+      "ph_price" : "421",
+      "filterKey" : "refundable"
+    },
+    {
+      "name" : "Morning Departure",
+      "ph_price" : "600",
+      "filterKey" : "morningDeparture"
+    },
+    {
+      "name" : "Late Departure",
+      "ph_price" : "743",
+      "filterKey" : "lateDeparture"
+    },
+    {
+      "name" : "1 Stop",
+      "ph_price" : "812",
+      "filterKey" : "oneStop"
+    }
+  ],
+  "countryList" : [
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "American Samoa",
+  "Andorra",
+  "Angola",
+  "Anguilla",
+  "Antarctica",
+  "Antigua and Barbuda",
+  "Argentina",
+  "Armenia",
+  "Aruba",
+  "Australia",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas (the)",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Benin",
+  "Bermuda",
+  "Bhutan",
+  "Bolivia (Plurinational State of)",
+  "Bonaire, Sint Eustatius and Saba",
+  "Bosnia and Herzegovina",
+  "Botswana",
+  "Bouvet Island",
+  "Brazil",
+  "British Indian Ocean Territory (the)",
+  "Brunei Darussalam",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Cabo Verde",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Cayman Islands (the)",
+  "Central African Republic (the)",
+  "Chad",
+  "Chile",
+  "China",
+  "Christmas Island",
+  "Cocos (Keeling) Islands (the)",
+  "Colombia",
+  "Comoros (the)",
+  "Congo (the Democratic Republic of the)",
+  "Congo (the)",
+  "Cook Islands (the)",
+  "Costa Rica",
+  "Croatia",
+  "Cuba",
+  "Curaçao",
+  "Cyprus",
+  "Czechia",
+  "Côte d'Ivoire",
+  "Denmark",
+  "Djibouti",
+  "Dominica",
+  "Dominican Republic (the)",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Eswatini",
+  "Ethiopia",
+  "Falkland Islands (the) [Malvinas]",
+  "Faroe Islands (the)",
+  "Fiji",
+  "Finland",
+  "France",
+  "French Guiana",
+  "French Polynesia",
+  "French Southern Territories (the)",
+  "Gabon",
+  "Gambia (the)",
+  "Georgia",
+  "Germany",
+  "Ghana",
+  "Gibraltar",
+  "Greece",
+  "Greenland",
+  "Grenada",
+  "Guadeloupe",
+  "Guam",
+  "Guatemala",
+  "Guernsey",
+  "Guinea",
+  "Guinea-Bissau",
+  "Guyana",
+  "Haiti",
+  "Heard Island and McDonald Islands",
+  "Holy See (the)",
+  "Honduras",
+  "Hong Kong",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Iran (Islamic Republic of)",
+  "Iraq",
+  "Ireland",
+  "Isle of Man",
+  "Israel",
+  "Italy",
+  "Jamaica",
+  "Japan",
+  "Jersey",
+  "Jordan",
+  "Kazakhstan",
+  "Kenya",
+  "Kiribati",
+  "Korea (the Democratic People's Republic of)",
+  "Korea (the Republic of)",
+  "Kuwait",
+  "Kyrgyzstan",
+  "Lao People's Democratic Republic (the)",
+  "Latvia",
+  "Lebanon",
+  "Lesotho",
+  "Liberia",
+  "Libya",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Macao",
+  "Madagascar",
+  "Malawi",
+  "Malaysia",
+  "Maldives",
+  "Mali",
+  "Malta",
+  "Marshall Islands (the)",
+  "Martinique",
+  "Mauritania",
+  "Mauritius",
+  "Mayotte",
+  "Mexico",
+  "Micronesia (Federated States of)",
+  "Moldova (the Republic of)",
+  "Monaco",
+  "Mongolia",
+  "Montenegro",
+  "Montserrat",
+  "Morocco",
+  "Mozambique",
+  "Myanmar",
+  "Namibia",
+  "Nauru",
+  "Nepal",
+  "Netherlands (the)",
+  "New Caledonia",
+  "New Zealand",
+  "Nicaragua",
+  "Niger (the)",
+  "Nigeria",
+  "Niue",
+  "Norfolk Island",
+  "Northern Mariana Islands (the)",
+  "Norway",
+  "Oman",
+  "Pakistan",
+  "Palau",
+  "Palestine, State of",
+  "Panama",
+  "Papua New Guinea",
+  "Paraguay",
+  "Peru",
+  "Philippines (the)",
+  "Pitcairn",
+  "Poland",
+  "Portugal",
+  "Puerto Rico",
+  "Qatar",
+  "Republic of North Macedonia",
+  "Romania",
+  "Russian Federation (the)",
+  "Rwanda",
+  "Réunion",
+  "Saint Barthélemy",
+  "Saint Helena, Ascension and Tristan da Cunha",
+  "Saint Kitts and Nevis",
+  "Saint Lucia",
+  "Saint Martin (French part)",
+  "Saint Pierre and Miquelon",
+  "Saint Vincent and the Grenadines",
+  "Samoa",
+  "San Marino",
+  "Sao Tome and Principe",
+  "Saudi Arabia",
+  "Senegal",
+  "Serbia",
+  "Seychelles",
+  "Sierra Leone",
+  "Singapore",
+  "Sint Maarten (Dutch part)",
+  "Slovakia",
+  "Slovenia",
+  "Solomon Islands",
+  "Somalia",
+  "South Africa",
+  "South Georgia and the South Sandwich Islands",
+  "South Sudan",
+  "Spain",
+  "Sri Lanka",
+  "Sudan (the)",
+  "Suriname",
+  "Svalbard and Jan Mayen",
+  "Sweden",
+  "Switzerland",
+  "Syrian Arab Republic",
+  "Taiwan",
+  "Tajikistan",
+  "Tanzania, United Republic of",
+  "Thailand",
+  "Timor-Leste",
+  "Togo",
+  "Tokelau",
+  "Tonga",
+  "Trinidad and Tobago",
+  "Tunisia",
+  "Turkey",
+  "Turkmenistan",
+  "Turks and Caicos Islands (the)",
+  "Tuvalu",
+  "Uganda",
+  "Ukraine",
+  "United Arab Emirates (the)",
+  "United Kingdom of Great Britain and Northern Ireland (the)",
+  "United States Minor Outlying Islands (the)",
+  "United States of America (the)",
+  "Uruguay",
+  "Uzbekistan",
+  "Vanuatu",
+  "Venezuela (Bolivarian Republic of)",
+  "Viet Nam",
+  "Virgin Islands (British)",
+  "Virgin Islands (U.S.)",
+  "Wallis and Futuna",
+  "Western Sahara",
+  "Yemen",
+  "Zambia",
+  "Zimbabwe",
+  "Åland Islands"
+],
+  "dialorCountryCode": [
+    "+7 840",
+    "+93",
+    "+355",
+    "+213",
+    "+1 684",
+    "+376",
+    "+244",
+    "+1 264",
+    "+1 268",
+    "+54",
+    "+374",
+    "+297",
+    "+247",
+    "+61",
+    "+672",
+    "+43",
+    "+994",
+    "+1 242",
+    "+973",
+    "+880",
+    "+1 246",
+    "+1 268",
+    "+375",
+    "+32",
+    "+501",
+    "+229",
+    "+1 441",
+    "+975",
+    "+591",
+    "+387",
+    "+267",
+    "+55",
+    "+246",
+    "+1 284",
+    "+673",
+    "+359",
+    "+226",
+    "+257",
+    "+855",
+    "+237",
+    "+1",
+    "+238",
+    "+ 345",
+    "+236",
+    "+235",
+    "+56",
+    "+86",
+    "+61",
+    "+61",
+    "+57",
+    "+269",
+    "+242",
+    "+243",
+    "+682",
+    "+506",
+    "+385",
+    "+53",
+    "+599",
+    "+537",
+    "+420",
+    "+45",
+    "+246",
+    "+253",
+    "+1 767",
+    "+1 809",
+    "+670",
+    "+56",
+    "+593",
+    "+20",
+    "+503",
+    "+240",
+    "+291",
+    "+372",
+    "+251",
+    "+500",
+    "+298",
+    "+679",
+    "+358",
+    "+33",
+    "+596",
+    "+594",
+    "+689",
+    "+241",
+    "+220",
+    "+995",
+    "+49",
+    "+233",
+    "+350",
+    "+30",
+    "+299",
+    "+1 473",
+    "+590",
+    "+1 671",
+    "+502",
+    "+224",
+    "+245",
+    "+595",
+    "+509",
+    "+504",
+    "+852",
+    "+36",
+    "+354",
+    "+91",
+    "+62",
+    "+98",
+    "+964",
+    "+353",
+    "+972",
+    "+39",
+    "+225",
+    "+1 876",
+    "+81",
+    "+962",
+    "+7 7",
+    "+254",
+    "+686",
+    "+965",
+    "+996",
+    "+856",
+    "+371",
+    "+961",
+    "+266",
+    "+231",
+    "+218",
+    "+423",
+    "+370",
+    "+352",
+    "+853",
+    "+389",
+    "+261",
+    "+265",
+    "+60",
+    "+960",
+    "+223",
+    "+356",
+    "+692",
+    "+596",
+    "+222",
+    "+230",
+    "+262",
+    "+52",
+    "+691",
+    "+1 808",
+    "+373",
+    "+377",
+    "+976",
+    "+382",
+    "+1664",
+    "+212",
+    "+95",
+    "+264",
+    "+674",
+    "+977",
+    "+31",
+    "+599",
+    "+1 869",
+    "+687",
+    "+64",
+    "+505",
+    "+227",
+    "+234",
+    "+683",
+    "+672",
+    "+850",
+    "+1 670",
+    "+47",
+    "+968",
+    "+92",
+    "+680",
+    "+970",
+    "+507",
+    "+675",
+    "+595",
+    "+51",
+    "+63",
+    "+48",
+    "+351",
+    "+1 787",
+    "+974",
+    "+262",
+    "+40",
+    "+7",
+    "+250",
+    "+685",
+    "+378",
+    "+966",
+    "+221",
+    "+381",
+    "+248",
+    "+232",
+    "+65",
+    "+421",
+    "+386",
+    "+677",
+    "+27",
+    "+500",
+    "+82",
+    "+34",
+    "+94",
+    "+249",
+    "+597",
+    "+268",
+    "+46",
+    "+41",
+    "+963",
+    "+886",
+    "+992",
+    "+255",
+    "+66",
+    "+670",
+    "+228",
+    "+690",
+    "+676",
+    "+1 868",
+    "+216",
+    "+90",
+    "+993",
+    "+1 649",
+    "+688",
+    "+1 340",
+    "+256",
+    "+380",
+    "+971",
+    "+44",
+    "+1",
+    "+598",
+    "+998",
+    "+678",
+    "+58",
+    "+84",
+    "+1 808",
+    "+681",
+    "+967",
+    "+260",
+    "+255",
+    "+263"
+  ]
+}
