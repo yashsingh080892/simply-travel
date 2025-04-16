@@ -133,6 +133,8 @@ const Signup = (props:any) => {
     const [eggean, setEggean] = useState(false);
     const onToggleEggean = () => setEggean(prevCount => !prevCount);
 
+    const [eggean, setEggean] = useState(false);
+    const onToggleEggean = () => setEggean(prevCount => !prevCount);
 
     const signUpData:SignUp = new SignUp();
     signUpData.firstName = firstName;
