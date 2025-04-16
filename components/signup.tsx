@@ -262,8 +262,6 @@ const Signup = (props:any) => {
                         {name:"Lufthansa", id:"LUFTHANSA"},
                         {name:"Emirates", id:"EMIRATES"},
                         {name:"Indigo", id:"INDIGO"},
-                        {name:"Air India", id:"AIR_INDIA"},
-                        {name:"Air India Express", id:"AIR_INDIA_EXPRESS"},
                     ]} value={preferredAirline} onValueChange={setPreferredAirline}/>
                 </div>
             </div>
