@@ -37,13 +37,13 @@ const UserTypeSelector = ({ open, onClose }: { open: boolean; onClose: (selected
                             <FormControlLabel 
                                 value="plus" 
                                 control={<Radio />} 
-                                label="Plus User" 
+                                label="Plus User 1" 
                                 className="mb-2"
                             />
                             <FormControlLabel 
                                 value="pro" 
                                 control={<Radio />} 
-                                label="Pro User" 
+                                label="Pro User 1" 
                                 className="mb-2"
                             />
                             <FormControlLabel 
@@ -66,3 +66,7 @@ const UserTypeSelector = ({ open, onClose }: { open: boolean; onClose: (selected
 };
 
 export default UserTypeSelector; 
+
+
+
+
