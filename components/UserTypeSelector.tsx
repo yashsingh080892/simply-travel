@@ -37,13 +37,19 @@ const UserTypeSelector = ({ open, onClose }: { open: boolean; onClose: (selected
                             <FormControlLabel 
                                 value="plus" 
                                 control={<Radio />} 
-                                label="Plus User 1" 
+                                label="Plus User" 
                                 className="mb-2"
                             />
                             <FormControlLabel 
                                 value="pro" 
                                 control={<Radio />} 
-                                label="Pro User 1" 
+                                label="Pro User" 
+                                className="mb-2"
+                            />
+                            <FormControlLabel 
+                                value="enterprise" 
+                                control={<Radio />} 
+                                label="Enterprise User" 
                                 className="mb-2"
                             />
                             <FormControlLabel 
